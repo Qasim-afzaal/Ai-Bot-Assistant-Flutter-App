@@ -1,6 +1,3 @@
-Here's the updated README file without the "Screenshots" section: 
-
-```markdown
 # Ai-Bot-Assistant-Flutter-App
 
 **Ai-Bot-Assistant-Flutter-App** is an advanced Flutter application designed to translate text, generate AI-powered images, and interact with users through a chatbot interface. The app leverages various AI technologies and integrates seamlessly with multiple APIs and tools.
