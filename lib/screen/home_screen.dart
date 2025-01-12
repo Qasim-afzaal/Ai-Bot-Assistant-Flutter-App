@@ -16,8 +16,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // final _isDarkMode = Pref.isDarkMode.obs;
-  final _isDarkMode = Get.isDarkMode.obs; //bug fix
+  final _isDarkMode = Get.isDarkMode.obs;
 
   @override
   void initState() {
@@ -28,18 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //initializing device size
     mq = MediaQuery.sizeOf(context);
 
-    //sample api call
-    // APIs.getAnswer('hii');
-
     return Scaffold(
-      //app bar
       appBar: AppBar(
         title: const Text(appName),
-
-        //
         actions: [
           IconButton(
               padding: const EdgeInsets.only(right: 10),
@@ -57,11 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   size: 26)))
         ],
       ),
-
-      //ad
       bottomNavigationBar: AdHelper.nativeBannerAd(),
-
-      //body
       body: ListView(
         padding: EdgeInsets.symmetric(
             horizontal: mq.width * .04, vertical: mq.height * .015),
