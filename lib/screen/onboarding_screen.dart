@@ -16,14 +16,14 @@ class OnboardingScreen extends StatelessWidget {
     final c = PageController();
 
     final list = [
-      //onboarding 1
+
       Onboard(
           title: 'Ask me Anything',
           subtitle:
               'I can be your Best Friend & You can ask me anything & I will help you!',
           lottie: 'ai_ask_me'),
 
-      //onboarding 2
+ 
       Onboard(
         title: 'Imagination to Reality',
         lottie: 'ai_play',
@@ -54,7 +54,6 @@ class OnboardingScreen extends StatelessWidget {
                     letterSpacing: .5),
               ),
 
-              //for adding some space
               SizedBox(height: mq.height * .015),
 
               //subtitle
